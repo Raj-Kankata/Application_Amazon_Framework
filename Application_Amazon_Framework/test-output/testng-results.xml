@@ -1,40 +1,110 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2021-04-22T17:14:42 PDT" name="Default suite" finished-at="2021-04-22T17:15:07 PDT" duration-ms="25048">
+  <suite started-at="2021-04-23T10:13:03 PDT" name="Default suite" finished-at="2021-04-23T10:13:40 PDT" duration-ms="36291">
     <groups>
     </groups>
-    <test started-at="2021-04-22T17:14:42 PDT" name="Default test" finished-at="2021-04-22T17:15:07 PDT" duration-ms="25048">
-      <class name="com.rk.scripts.TC01">
-        <test-method is-config="true" signature="generateReport()[pri:0, instance:com.rk.scripts.TC01@2bbf180e]" started-at="2021-04-22T17:14:42 PDT" name="generateReport" finished-at="2021-04-22T17:14:43 PDT" duration-ms="286" status="PASS">
+    <test started-at="2021-04-23T10:13:03 PDT" name="Default test" finished-at="2021-04-23T10:13:40 PDT" duration-ms="36291">
+      <class name="com.rk.scripts.TC01_Search">
+        <test-method is-config="true" signature="generateReport()[pri:0, instance:com.rk.scripts.TC01_Search@2bbf180e]" started-at="2021-04-23T10:13:03 PDT" name="generateReport" finished-at="2021-04-23T10:13:04 PDT" duration-ms="269" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- generateReport -->
-        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.rk.scripts.TC01@2bbf180e]" started-at="2021-04-22T17:14:43 PDT" name="beforeClass" finished-at="2021-04-22T17:14:47 PDT" duration-ms="4748" status="PASS">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.rk.scripts.TC01_Search@2bbf180e]" started-at="2021-04-23T10:13:04 PDT" name="beforeClass" finished-at="2021-04-23T10:13:08 PDT" duration-ms="4646" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeClass -->
-        <test-method is-config="true" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.rk.scripts.TC01@2bbf180e]" started-at="2021-04-22T17:14:47 PDT" name="methodName" finished-at="2021-04-22T17:14:47 PDT" duration-ms="7" status="PASS">
+        <test-method is-config="true" signature="methodName(java.lang.reflect.Method)[pri:0, instance:com.rk.scripts.TC01_Search@2bbf180e]" started-at="2021-04-23T10:13:08 PDT" name="methodName" finished-at="2021-04-23T10:13:08 PDT" duration-ms="8" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void com.rk.scripts.TC01.Login_Logout_Amazon()]]>
+                <![CDATA[public void com.rk.scripts.TC01_Search.Login_Search_Amazon() throws java.lang.Exception]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- methodName -->
-        <test-method signature="Login_Logout_Amazon()[pri:0, instance:com.rk.scripts.TC01@2bbf180e]" started-at="2021-04-22T17:14:47 PDT" name="Login_Logout_Amazon" finished-at="2021-04-22T17:15:06 PDT" duration-ms="18333" status="PASS">
+        <test-method signature="Login_Search_Amazon()[pri:0, instance:com.rk.scripts.TC01_Search@2bbf180e]" started-at="2021-04-23T10:13:08 PDT" name="Login_Search_Amazon" finished-at="2021-04-23T10:13:38 PDT" duration-ms="29783" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='a-row a-spacing-micro']//span[@class='a-color-price hlb-price a-inline-block a-text-bold'][normalize-space()='$47.49']"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Rajkumars-MacBook-Pro.local', ip: '2601:640:105:a77f:e858:9ed:1b3a:9438%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /var/folders/sd/8604ycy506x...}, goog:chromeOptions: {debuggerAddress: localhost:62482}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d786ce711e44793172ba0a6a1431bcbc
+*** Element info: {Using=xpath, value=//div[@class='a-row a-spacing-micro']//span[@class='a-color-price hlb-price a-inline-block a-text-bold'][normalize-space()='$47.49']}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//div[@class='a-row a-spacing-micro']//span[@class='a-color-price hlb-price a-inline-block a-text-bold'][normalize-space()='$47.49']"}
+  (Session info: chrome=90.0.4430.85)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Rajkumars-MacBook-Pro.local', ip: '2601:640:105:a77f:e858:9ed:1b3a:9438%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '15.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 90.0.4430.85, chrome: {chromedriverVersion: 90.0.4430.24 (4c6d850f087da..., userDataDir: /var/folders/sd/8604ycy506x...}, goog:chromeOptions: {debuggerAddress: localhost:62482}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: d786ce711e44793172ba0a6a1431bcbc
+*** Element info: {Using=xpath, value=//div[@class='a-row a-spacing-micro']//span[@class='a-color-price hlb-price a-inline-block a-text-bold'][normalize-space()='$47.49']}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:481)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at com.rk.reuse.CommonFunctions.serach(CommonFunctions.java:58)
+at com.rk.scripts.TC01_Search.Login_Search_Amazon(TC01_Search.java:17)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Login_Logout_Amazon -->
-        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.rk.scripts.TC01@2bbf180e]" started-at="2021-04-22T17:15:06 PDT" name="afterClass" finished-at="2021-04-22T17:15:07 PDT" duration-ms="1640" status="PASS">
+        </test-method> <!-- Login_Search_Amazon -->
+        <test-method is-config="true" signature="afterClass()[pri:0, instance:com.rk.scripts.TC01_Search@2bbf180e]" started-at="2021-04-23T10:13:38 PDT" name="afterClass" finished-at="2021-04-23T10:13:40 PDT" duration-ms="1549" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterClass -->
-      </class> <!-- com.rk.scripts.TC01 -->
+      </class> <!-- com.rk.scripts.TC01_Search -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
