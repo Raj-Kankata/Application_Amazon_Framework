@@ -3,15 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.rk.scripts.TC01_Search">
+      <class name="com.rk.scripts.TC06_PUT_Request">
         <methods>
-          <include name="beforeClass"/>
-          <include name="generateReport"/>
-          <include name="Login_Search_Amazon"/>
-          <include name="afterClass"/>
-          <include name="methodName"/>
+          <include name="test1"/>
         </methods>
-      </class> <!-- com.rk.scripts.TC01_Search -->
+      </class> <!-- com.rk.scripts.TC06_PUT_Request -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
